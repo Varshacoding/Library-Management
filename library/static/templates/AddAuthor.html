@@ -1,0 +1,37 @@
+{% extends 'Index.html' %}
+{%block title%} ADD BOOK {%endblock title%}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/lib/jquery.min.js"></script>
+<script src="/lib/jquery.plugin.js"></script>
+
+{%block body%}
+
+<!--                      Main Form            -->
+<form >{% csrf_token %}
+<div class = "text-white" align= "center">
+<div class ="div_style">
+  <h5><span class="label_style">Name:</span> <input type ="text" name = "book_id" id = "book_id" class ="textbox_style">
+</div>
+<div class ="div_style">
+  <h5><span class="label_style">Surname:</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style">
+</div>
+<div class ="div_style">
+  <h5><span class="label_style">Email:</span> <input type ="text" name = "author_name" id = "author_name" class ="textbox_style">
+</div></h5>
+
+    <div class ="div_style">
+  <h5><span class="label_style">Phone No:</span> <input type ="text" name = "author_name" id = "author_name" class ="textbox_style">
+</div></h5>
+    <div class ="div_style">
+  <h5><span class="label_style">Facebook Username:</span> <input type ="text" name = "author_name" id = "author_name" class ="textbox_style">
+</div></h5>
+
+</div>
+<div class ="div_style" align = "center">
+<input type = 'button' value = 'Submit' class="btn btn-primary" style = "width: 200px; padding-right : 10px;" id = "submit_btn"></a>
+</div>
+</form>
+
+ {%endblock body%}
+

@@ -1,0 +1,28 @@
+{% extends 'Index.html' %}
+{%block title%} Delete Book {%endblock title%}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/lib/jquery.min.js"></script>
+<script src="/lib/jquery.plugin.js"></script>
+
+{%block body%}
+
+<form > {% csrf_token %}
+<div class = "text-white" align= "center">
+
+<div class ="div_style">
+  <h5><span class="label_style">Name :</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style" value = {{authors.name}} >
+</div>
+
+    <div class ="div_style">
+  <h5><span class="label_style">Title :</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style" value = {{authors.surname}} >
+</div>
+
+<div class ="div_style" align = "center">
+<input type = 'button' value = 'Delete' class="btn btn-danger" style = "width: 200px; padding-right : 10px;" id = "delete_btn">
+<a href="/viewbook/"><input type = 'button' value = 'Cancel'  class="btn btn-primary" style = "width: 200px;">
+</div>
+</form>
+
+
+ {%endblock body%}

@@ -1,0 +1,30 @@
+{% extends 'Index.html' %}
+{% block title %} Update Author{% endblock %}
+
+
+{% block body %}
+
+<form xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"> {% csrf_token %}
+<div class = "text-white" align= "center">
+<div class ="div_style">
+  <h5><span class="label_style">Title :</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style" value = {{book.name}} >
+</div>
+
+    <div class ="div_style">
+  <h5><span class="label_style">Genre :</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style" value = {{ book.surname}} >
+</div>
+
+    <div class ="div_style">
+  <h5><span class="label_style">Number of pages :</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style" value = {{ book.email}} >
+</div>
+
+    <div class ="div_style">
+  <h5><span class="label_style">Release Date :</span> <input type ="text" name = "book_title" id = "book_title" class ="textbox_style" value = {{ book.phone_no}} >
+</div>
+
+</div>
+<input type = 'button' value = 'Update Profile' class="btn btn-danger" style = "width: 200px; padding-right : 10px;" id = "delete_btn">
+
+</form>
+
+{% endblock %}
